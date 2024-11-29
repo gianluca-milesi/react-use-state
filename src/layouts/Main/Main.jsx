@@ -1,6 +1,7 @@
 import style from "./Main.module.css"
 import List from "../../components/List/List.jsx"
 import Card from "../../components/Card/Card.jsx"
+import languages from "../../data/languages.js"
 
 function Main() {
 
@@ -11,7 +12,9 @@ function Main() {
                     <List />
                 </div>
                 <section className={style.cards}>
-                    <Card />
+                    {languages.map(language => (
+                        <Card key={language.id} title={language.title} description={language.description} />
+                    ))}
                 </section>
             </main>
         </>
