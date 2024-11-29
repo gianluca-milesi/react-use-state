@@ -1,7 +1,13 @@
-function Main(){
+import List from "../components/List/List.jsx"
+import Card from "../components/Card/Card.jsx"
 
-    return(
-        <div>main</div>
+function Main() {
+
+    return (
+        <>
+            <List />
+            <Card />
+        </>
     )
 }
 
