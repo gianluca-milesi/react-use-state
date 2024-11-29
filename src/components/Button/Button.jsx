@@ -1,9 +1,9 @@
 import style from "./Button.module.css"
 
-function Button() {
+function Button({ title }) {
 
     return (
-        <button>Click</button>
+        <button className={style.button}>{title}</button>
     )
 }
 

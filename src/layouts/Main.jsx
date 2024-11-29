@@ -5,7 +5,9 @@ function Main() {
 
     return (
         <>
-            <List />
+            <div className="container">
+                <List />
+            </div>
             <Card />
         </>
     )
