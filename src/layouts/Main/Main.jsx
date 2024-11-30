@@ -5,9 +5,11 @@ function Main() {
 
     return (
         <main>
-            <div className="container">
-                <LanguagesPanel />
-            </div>
+            <section className={style.languages_panel}>
+                <div className="container">
+                    <LanguagesPanel />
+                </div>
+            </section>
         </main>
     )
 }
