@@ -1,9 +1,9 @@
 import style from "./Button.module.css"
 
-function Button({ title, onClick }) {
+function Button({ title, onClick, isActive }) {
 
     return (
-        <button className={style.button} onClick={onClick}>{title}</button>
+        <button className= {`${style.button} ${isActive ? style.active : ""}`} onClick={onClick}>{title}</button>
     )
 }
 

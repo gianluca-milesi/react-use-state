@@ -16,7 +16,7 @@ function LanguagesPanel() {
         <div>
             <ul className={style.languages_list}>
                 {languages.map(language => (
-                    <li key={language.id}><Button title={language.title} onClick={() => toggle(language.id)} /></li>
+                    <li key={language.id}><Button title={language.title} onClick={() => toggle(language.id)} isActive={currentId === language.id} /></li>
                 ))}
             </ul>
             {
