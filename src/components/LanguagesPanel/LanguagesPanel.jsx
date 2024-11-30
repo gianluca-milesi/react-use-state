@@ -1,10 +1,10 @@
-import style from "./List.module.css"
+import style from "./LanguagesPanel.module.css"
 import { useState } from "react"
 import Button from "../Button/Button.jsx"
 import Card from "../Card/Card.jsx"
 import languages from "../../data/languages.js"
 
-function List() {
+function LanguagesPanel() {
     const [currentId, setCurrentId] = useState(null);
 
     function toggle(id) {
@@ -26,4 +26,4 @@ function List() {
     )
 }
 
-export default List
+export default LanguagesPanel

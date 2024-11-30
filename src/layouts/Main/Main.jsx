@@ -1,12 +1,12 @@
 import style from "./Main.module.css"
-import List from "../../components/List/List.jsx"
+import LanguagesPanel from "../../components/LanguagesPanel/LanguagesPanel.jsx"
 
 function Main() {
 
     return (
         <main>
             <div className="container">
-                <List />
+                <LanguagesPanel />
             </div>
         </main>
     )
